@@ -2,15 +2,153 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:projecte_threestates="clr-namespace:Projecte_ThreeStates"
              mc:Ignorable="d"
              x:Class="Projecte_ThreeStates.MainPage">
-
+    
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Frame
+            Margin="10"
+            CornerRadius="10"
+            Padding="0"
+            HeightRequest="300">
+            <Grid>
+                <projecte_threestates:ThreeStatesControl
+                BackgroundColor="Lime"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"/>
+            </Grid>
+        </Frame>
+
+
+        <Frame
+            Margin="2"
+            CornerRadius="10"
+            BackgroundColor="#333EBD"
+            Padding="0">
+            <Frame
+                Margin="6"
+                CornerRadius="7"
+                HasShadow="False"
+                Padding="0">
+                <Grid>
+                    <projecte_threestates:ThreeStatesControl
+                        NeutralStateImageSource="grid.png"
+                        SetStateImageSource="arrowdown.png"
+                        UnsetStateImageSource="arrowup.png"
+                        Text="A-Z"
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"/>
+
+                </Grid>
+            </Frame>
+        </Frame>
+
+        <Frame
+            Margin="2"
+            CornerRadius="10"
+            BackgroundColor="#333EBD"
+            Padding="0">
+            <Frame
+                Margin="6"
+                CornerRadius="7"
+                HasShadow="False"
+                Padding="0">
+                <projecte_threestates:ThreeStatesControl
+                    NeutralStateImageSource="grid.png"
+                    SetStateImageSource="arrowdown.png"
+                    UnsetStateImageSource="arrowup.png"
+                    Text="Collected"
+                    BackgroundColor="#2E249E"
+                    Padding="0"/>
+            </Frame>
+        </Frame>
+
+        <Frame
+            Margin="2"
+            CornerRadius="10"
+            BackgroundColor="#333EBD"
+            Padding="0">
+            <Frame
+                Margin="6"
+                CornerRadius="7"
+                HasShadow="False"
+                Padding="0">
+                <projecte_threestates:ThreeStatesControl
+                    BackgroundColor="#333EB1"
+                    Padding="0"/>
+            </Frame>
+        </Frame>
+
+        <Frame
+            Margin="2"
+            CornerRadius="10"
+            BackgroundColor="#333EBD"
+            Padding="0">
+            <Frame
+                Margin="6"
+                CornerRadius="7"
+                HasShadow="False"
+                Padding="0">
+                <Grid>
+                    <projecte_threestates:ThreeStatesControl
+                        BackgroundColor="Transparent"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"/>
+
+                </Grid>
+            </Frame>
+        </Frame>
+
+        <Frame
+            Margin="2"
+            CornerRadius="10"
+            BackgroundColor="#333EBD"
+            Padding="0">
+            <Frame
+                Margin="6"
+                CornerRadius="7"
+                HasShadow="False"
+                Padding="0">
+                <Grid>
+                    <projecte_threestates:ThreeStatesControl
+                        BackgroundColor="#2E249E"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"/>
+                </Grid>
+            </Frame>
+        </Frame>
+
+        <Frame
+            Margin="2"
+            CornerRadius="10"
+            BackgroundColor="White"
+            Padding="0">
+            <Frame
+                Margin="6"
+                CornerRadius="7"
+                HasShadow="False"
+                Padding="0">
+                <Grid>
+                    <projecte_threestates:ThreeStatesControl
+                        BackgroundColor="AntiqueWhite"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"/>
+                </Grid>
+            </Frame>
+        </Frame>
+        <Frame
+                Margin="6"
+                CornerRadius="7"
+                Padding="0">
+            <Grid>
+                <projecte_threestates:ThreeStatesControl
+                        BackgroundColor="AntiqueWhite"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"/>
+            </Grid>
+        </Frame>
     </StackLayout>
 
 </ContentPage>

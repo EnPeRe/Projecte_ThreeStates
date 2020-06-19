@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Projecte_ThreeStates.ThreeStatesControl">
+    <ContentView.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Element_Tapped"/>
+            </Grid.GestureRecognizers>
+            <Image
+                x:Name="ImageState"
+                Grid.Row="0"
+                Grid.Column="0"/>
+            <Label 
+                x:Name="LabelText"
+                Grid.Row="0"
+                Grid.Column="1"
+                FontSize="10"
+                VerticalTextAlignment="Center">
+            </Label>
+
+        </Grid>
+    </ContentView.Content>
+</ContentView>
